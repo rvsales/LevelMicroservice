@@ -18,10 +18,16 @@ public class LevelModel {
 	@Id
 	@Getter @Setter
 	private String id; 		
-
+	
+	@Getter @Setter
+	private String description;
+	
+	@Getter @Setter
+	private String limit;
+	
 	@Override
 	public String toString() {
-	    return "level [id= ]";
+	    return "level [id= " + id + ", description= " + description + ", limit= " + limit + "]";
 	}	
 
 	   @Override
