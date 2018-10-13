@@ -9,8 +9,8 @@ import io.core.data.Level.LevelModel;
 @Repository
 public interface LevelRepositoryCustom {
 
+	List<LevelModel> getLevelModel();
 	List<LevelModel> getLevelModel(String id);
-	
 	LevelModel saveLevelModel(LevelModel entity);
 	
 }

@@ -40,7 +40,8 @@ public class LevelRepositoryImpl implements LevelRepositoryCustom {
 
 	}
 
-	public List<LevelModel> getLevelModels() {
+	@Override
+	public List<LevelModel> getLevelModel() {
 	
 		return mongoTemplate.findAll(LevelModel.class);
 
